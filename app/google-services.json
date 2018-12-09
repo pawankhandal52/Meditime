@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "139129313336",
+    "firebase_url": "https://meditime-1a997.firebaseio.com",
+    "project_id": "meditime-1a997",
+    "storage_bucket": "meditime-1a997.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139129313336:android:9a57000133ccba79",
+        "android_client_info": {
+          "package_name": "com.pawankhandal52.meditime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139129313336-5bi9l6nbieujtpd3gt28heb211at4fb8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pawankhandal52.meditime",
+            "certificate_hash": "212e280000d192c381bb23af07de624bc38fbd0a"
+          }
+        },
+        {
+          "client_id": "139129313336-v4h81gfik6ov1dekpuo1m9rs2lko4p7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs1G1Qd500dmvQA7FtsunDK_Zjc4T4-sI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139129313336-v4h81gfik6ov1dekpuo1m9rs2lko4p7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

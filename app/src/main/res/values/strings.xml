@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Meditime</string>
+    <string name="splash_logo_desc">Splash Logo Image</string>
+    <string name="your_medicine_reminder">Your Medicine Reminder</string>
+    <string name="all_right_resrved">All Right Reserved @Meditime</string>
+</resources>
