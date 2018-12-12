@@ -3,4 +3,62 @@
     <string name="splash_logo_desc">Splash Logo Image</string>
     <string name="your_medicine_reminder">Your Medicine Reminder</string>
     <string name="all_right_resrved">All Right Reserved @Meditime</string>
+
+
+    <!--Google request token-->
+    <string name="login_register_text">Please sign-in or login to sync your data with our server. If you not interested in sync then skip it.</string>
+    <string name="skip">skip</string>
+    <string name="login_signin">Login/Signin</string>
+    <string name="welcome_msg">Welcome now go and enjoy our services</string>
+
+
+    <!--Key of this project-->
+    <string name="key_user_id" translatable="false">user_id</string>
+    <string name="key_is_sync" translatable="false">is_sync</string>
+    <string name="setting">Setting</string>
+    <string name="short_by_name">Short By Name</string>
+    <string name="short_by_time">Short By Time</string>
+    <string name="authentication_failed">Authentication Failed.</string>
+    <string name="medicine_list">Medicine List</string>
+    <string name="medicine_image">medicine image</string>
+    <string name="edit_meicine_image">Edit Meicine Image</string>
+    <string name="alarm_image"/>
+    <string name="remiander_time">Remiander Time</string>
+    <string name="shifts">Shifts</string>
+    <string name="quantity">Quantity</string>
+    <string name="meditime_logo">Meditime Logo</string>
+    <string name="no_medicine_reminder_created_go_and_add_the_medicine_click_on_button">No Medicine Reminder Created go and add the medicine. click on + button</string>
+    <string name="save">Save</string>
+    <string name="add_new_medicine_to_add_remiander_for_that_fill_all_fields">Add new medicine to add remiander for that fill all fields.</string>
+    <string name="medicine_name">Medicine Name</string>
+    <string name="quantity_to_take">Quantity to take</string>
+    <string name="for_what_diseases">For What diseases</string>
+    <string name="medicine_type">Medicine Type</string>
+    <string name="add_medicine">Add Medicine</string>
+    <string name="session_to_take_medicine">Session to take Medicine</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="liquid">Liquid</string>
+    <string name="tablet">Tablet</string>
+    <string name="morning_time">Morning Time</string>
+    <string name="time">Time</string>
+    <string name="afternoon_time">Afternoon Time</string>
+    <string name="evening_time">Evening Time</string>
+    <string name="night_time">Night Time</string>
+    <string name="extra_instruction">Extra Instruction</string>
+    <string name="settings">Settings</string>
+    <string name="sync_your_data">Sync Your data</string>
+    <string name="about_us">About Us</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_with_friends">Share with Friends</string>
+    <string name="logout">Logout</string>
+    <string name="about_us_text">We are here to remove your illness</string>
+    <string name="sync_error">Please login and Register to sync your data</string>
+    <string name="please_check_afternoon">Please Check Afternoon in session to take medicine</string>
+    <string name="please_check_evening_session">Please check evening in session to take medicine</string>
+    <string name="please_chcek_night_session">Please check night in session to take medicine</string>
+    <string name="please_check_morning_session">Please check morning in session to take medicine</string>
+    <string name="your_phone_not_have_camera">Your phone not have an Camera</string>
 </resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddMedicineActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/add_medicine_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/appbar_elevation">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_add_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="@dimen/toolbar_elevation"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <include
+            layout="@layout/add_medicine_layout"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

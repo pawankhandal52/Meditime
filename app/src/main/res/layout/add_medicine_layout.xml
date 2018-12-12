@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_16dp"
+    android:minHeight="@dimen/constraint_min_height">
+
+
+    <TextView
+        android:id="@+id/headline_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/add_new_medicine_to_add_remiander_for_that_fill_all_fields"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <FrameLayout
+        android:id="@+id/fl_add_medicine_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/headline_text">
+
+        <ImageView
+            android:id="@+id/medicine_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/medicine_image"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_photo_camera_grey_48dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/scrim_image_view"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/edit_medicine_imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/edit_meicine_image"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/ic_edit_black_24dp"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/medicine_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/edittext_border"
+        android:layout_marginTop="10dp"
+        android:hint="@string/add_medicine"
+        android:inputType="text|textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fl_add_medicine_image_view"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/medicine_quantity_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/quantity_to_take"
+        android:inputType="text|textCapWords"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:padding="10dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_name_edit_text"/>
+
+    <TextView
+        android:id="@+id/shift_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/session_to_take_medicine"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/medicine_quantity_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_quantity_edit_text"/>
+
+    <LinearLayout
+        android:id="@+id/session_to_take_checkbox_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/shift_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/shift_text_view">
+
+        <CheckBox
+            android:id="@+id/morning_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/morning"/>
+
+        <CheckBox
+            android:id="@+id/afternoon_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/afternoon"/>
+
+        <CheckBox
+            android:id="@+id/evening_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/evening"/>
+
+        <CheckBox
+            android:id="@+id/night_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/night"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/session_to_take_checkbox_group"/>
+
+    <TextView
+        android:id="@+id/medicine_type_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/medicine_type"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_border"/>
+
+    <RadioGroup
+        android:id="@+id/medicine_type_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_type_text_view">
+
+        <RadioButton
+            android:id="@+id/liquid_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/liquid"/>
+
+        <RadioButton
+            android:id="@+id/tablet_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tablet"/>
+    </RadioGroup>
+
+    <View
+        android:id="@+id/view_border1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/medicine_type_rg"/>
+
+    <!--Medicine remainder Time-->
+    <LinearLayout
+        android:id="@+id/shifts_time_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view_border1">
+
+        <!--Morning Time-->
+        <LinearLayout
+            android:id="@+id/morning_time_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/morning_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/morning_time"
+                android:layout_gravity="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/morning_time_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:padding="10dp"
+                android:background="@drawable/edittext_border"
+                android:hint="@string/time"
+                android:inputType="none"
+                android:clickable="true"
+                android:focusable="false"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+        <!--Afternoon Time-->
+        <LinearLayout
+            android:id="@+id/afternoon_time_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/afternoon_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/afternoon_time"
+                android:layout_gravity="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/afternoon_time_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:hint="@string/time"
+
+                android:padding="10dp"
+                android:background="@drawable/edittext_border"
+                android:inputType="none"
+                android:clickable="true"
+                android:focusable="false"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+        <!--Evening time-->
+        <LinearLayout
+            android:id="@+id/evening_time_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/evening_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/evening_time"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                style="@style/TextAppearance.AppCompat.Body1"/>
+
+            <EditText
+                android:id="@+id/evening_time_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/time"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_border"
+                android:inputType="none"
+                android:clickable="true"
+                android:focusable="false"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/night_time_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/night_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/night_time"
+                android:layout_gravity="center"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_gravity="end"
+                android:id="@+id/night_time_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/time"
+                android:inputType="none"
+                android:padding="10dp"
+                android:background="@drawable/edittext_border"
+                android:clickable="true"
+                android:focusable="false"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/shifts_time_layout"
+        android:id="@+id/extra_instruction_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minLines="5"
+        android:padding="1dp"
+        android:gravity="start"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/extra_instruction"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:layout_marginTop="@dimen/padding_16dp"
+        app:layout_constraintTop_toBottomOf="@+id/extra_instruction_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/save"
+        android:onClick="saveMedicine"
+        android:textColor="@color/colorWite"
+        android:id="@+id/save_medicine"/>
+
+
+</android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

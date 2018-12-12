@@ -40,6 +40,8 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
     implementation "com.android.support:support-v4:${supportLibVersion}"
 
+    implementation "android.arch.persistence.room:runtime:${room_version}"
+    annotationProcessor "android.arch.persistence.room:compiler:${room_version}"
     implementation "android.arch.lifecycle:livedata:${lifecycle_version}"
     implementation "android.arch.lifecycle:runtime:${lifecycle_version}"
     implementation "android.arch.lifecycle:viewmodel:${lifecycle_version}"

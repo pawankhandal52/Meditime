@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_settings">
+
+
+    <Switch
+        android:id="@+id/sync_your_data_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="@string/sync_your_data"
+        app:layout_constraintBottom_toTopOf="@+id/border_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <View
+        android:id="@+id/border_view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_black"
+        app:layout_constraintBottom_toTopOf="@+id/about_us_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sync_your_data_switch"
+        app:layout_constraintTop_toBottomOf="@+id/sync_your_data_switch"/>
+
+
+    <TextView
+        android:id="@+id/about_us_text_view"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/about_us"
+        app:layout_constraintBottom_toTopOf="@+id/border_view_1"
+        app:layout_constraintStart_toStartOf="@+id/border_view"
+        app:layout_constraintTop_toBottomOf="@+id/border_view"/>
+
+
+    <View
+        android:id="@+id/border_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_black"
+        app:layout_constraintBottom_toTopOf="@+id/rate_us_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/about_us_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/about_us_text_view"/>
+
+
+    <TextView
+        android:id="@+id/rate_us_text_view"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/rate_us"
+        app:layout_constraintBottom_toTopOf="@+id/share_with_text_view"
+        app:layout_constraintStart_toStartOf="@+id/border_view_1"
+        app:layout_constraintTop_toBottomOf="@+id/border_view_1"/>
+
+
+    <View
+        android:id="@+id/border_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_black"
+        app:layout_constraintBottom_toBottomOf="@+id/rate_us_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rate_us_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/rate_us_text_view"/>
+
+
+    <TextView
+        android:id="@+id/share_with_text_view"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/share_with_friends"
+        app:layout_constraintBottom_toTopOf="@+id/border_view_3"
+        app:layout_constraintEnd_toEndOf="@+id/about_us_text_view"
+        app:layout_constraintStart_toEndOf="@+id/about_us_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/rate_us_text_view"/>
+
+
+    <View
+        android:id="@+id/border_view_3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_black"
+        app:layout_constraintBottom_toTopOf="@+id/logout_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_with_text_view"/>
+
+
+    <TextView
+        android:id="@+id/logout_text_view"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toTopOf="@+id/border_view_4"
+        app:layout_constraintStart_toStartOf="@+id/border_view_3"
+        app:layout_constraintTop_toBottomOf="@+id/border_view_3"/>
+
+
+    <View
+        android:id="@+id/border_view_4"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/logout_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/logout_text_view"/>
+
+
+</android.support.constraint.ConstraintLayout>
+
+    

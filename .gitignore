@@ -9,3 +9,10 @@
 /build
 /captures
 .externalNativeBuild
+libs/
+sampledata/
+src/main/java/com/pawankhandal52/meditime/adapter/
+src/main/java/com/pawankhandal52/meditime/fragment/
+src/main/java/com/pawankhandal52/meditime/networking/
+src/main/java/com/pawankhandal52/meditime/services/
+src/main/java/com/pawankhandal52/meditime/viewmodels/

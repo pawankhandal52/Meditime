@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.pawankhandal52.meditime">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
 
     <application
         android:allowBackup="true"
@@ -8,9 +16,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".activity.SplashActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -23,6 +31,12 @@
             android:resource="@array/preloaded_fonts"/>
 
         <activity android:name=".activity.LoginRegisterActivity">
+        </activity>
+        <activity android:name=".activity.HomeActivity">
+        </activity>
+        <activity android:name=".activity.AddMedicineActivity">
+        </activity>
+        <activity android:name=".activity.SettingsActivity">
         </activity>
     </application>
 

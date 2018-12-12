@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name = "padding_16dp">16dp</dimen>
+    <dimen name="btn_elvation">8dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_radious">5dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="switch_padding">10dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="constraint_min_height">500dp</dimen>
+    <dimen name="appbar_elevation">4dp</dimen>
 </resources>

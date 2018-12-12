@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/medicine_list_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/card_radious"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/card_padding">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/card_item_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/medicine_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/medicine_image"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_photo_camera_grey_48dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/scrim_image_view"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/edit_medicine_imagebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/edit_meicine_image"
+                android:cropToPadding="true"
+                app:srcCompat="@drawable/ic_edit_black_24dp"/>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/medicine_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLength="50"
+            android:text="@string/medicine_name"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"/>
+
+        <TextView
+            android:id="@+id/medicine_quantity_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLength="10"
+            android:text="@string/quantity"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"/>
+
+        <ImageView
+            android:id="@+id/remainder_imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/alarm_image"
+            android:cropToPadding="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_name_textView"
+            app:srcCompat="@drawable/ic_alarm_black_24dp"/>
+
+        <TextView
+            android:id="@+id/reminder_time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:text="@string/remiander_time"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/remainder_imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_name_textView"/>
+
+        <TextView
+            android:id="@+id/shift_to_take_medicine_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLength="50"
+            android:text="@string/shifts"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medicine_quantity_textView"/>
+
+        <Switch
+            android:id="@+id/remainder_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:showText="true"
+            android:splitTrack="true"
+            android:switchPadding="@dimen/switch_padding"
+            android:text="Remiander"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reminder_time_textView"/>
+
+        <ImageButton
+            android:id="@+id/fav_unfav_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shift_to_take_medicine_textView"
+            app:srcCompat="@drawable/ic_favorite_border_grey_24dp"/>
+
+        <ImageButton
+            android:id="@+id/delete_medicine_imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="true"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/fav_unfav_image_button"
+            app:layout_constraintTop_toBottomOf="@+id/shift_to_take_medicine_textView"
+            app:srcCompat="@drawable/ic_delete_black_34dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

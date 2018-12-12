@@ -7,4 +7,7 @@
 
     <!--Splash-->
     <color name="splashBackground">#ffffff</color>
+    <color name="colorWite">#ffffff</color>
+    <color name="pb_bg">#61e1e2e2</color>
+    <color name="color_black">#000000</color>
 </resources>
